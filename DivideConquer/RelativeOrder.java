@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class RelativeOrder {
-    public static void merge(int[] arr,int[] temp,int l,int mid,int h){
+     public static void merge(int[] arr,int[] temp,int l,int mid,int h){
             //copy allthe negative element from left
             int k=l;
             for(int i=l;i<=mid;i++){
@@ -28,11 +28,14 @@ public class RelativeOrder {
                 }
             }
 
+
             //copy temp back into arrr
             for(int i=l;i<=h;i++){
                 arr[i]=temp[i];
 
+
             }
+
 
     }
     public static void Partition(int[] arr, int[] temp,int l,int h){
@@ -43,6 +46,7 @@ public class RelativeOrder {
       Partition(arr,temp,l,mid);
       Partition(arr, temp, mid+1, h);
       merge(arr,temp,l,mid,h);
+
 
     }
     public static void main(String[] args) {
@@ -56,5 +60,6 @@ public class RelativeOrder {
       Partition(arr,temp,0,n-1);
         System.out.println(Arrays.toString(arr));
     }
+
     
 }

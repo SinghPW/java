@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
-public class NegatiePositive {
+public class NegativeToPositive {
+    
     public static void negativeToPositive(int[] arr, int n){
         int i=0;
         for(int j=0;j<n;j++){
@@ -18,6 +19,7 @@ public class NegatiePositive {
       negativeToPositive(arr,arr.length);
         System.out.println(Arrays.toString(arr));
 
+
     }
-    
+
 }

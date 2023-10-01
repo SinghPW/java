@@ -1,4 +1,4 @@
-public class Quicksort {
+public class QuicksortingNegativePositive {
     public static int partition(int[] arr,int l,int h){
         int i=l;
         int pivot=arr[l];
@@ -11,7 +11,7 @@ public class Quicksort {
             }
         }
         int temp=arr[l];
-        arr[l] =arr[i];
+        arr[l]=arr[i];
         arr[i]=temp;
         return i;
     }
